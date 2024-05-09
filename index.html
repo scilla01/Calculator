@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <table width="15%" height="120px">
+        <tr>
+            <td colspan="4">
+                <input placeholder="0" type="text" id="output" disabled>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <button onclick="appendValue('7')">7</button>
+            </td>
+            <td>
+                <button onclick="appendValue('8')">8</button>
+            </td>
+            <td>
+                <button onclick="appendValue('9')">9</button>
+            </td>
+            <td>
+                <button id="btnDivide" onclick="appendValue('/')">&divide;</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="appendValue('4')">4</button>
+            </td>
+            <td>
+                <button onclick="appendValue('5')">5</button>
+            </td>
+            <td>
+                <button onclick="appendValue('6')">6</button>
+            </td>
+            <td>
+                <button id="BtnTimes" onclick="appendValue('*')">&times;</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="appendValue('1')">1</button>
+            </td>
+            <td>
+                <button onclick="appendValue('2')">2</button>
+            </td>
+            <td>
+                <button onclick="appendValue('3')">3</button>
+            </td>
+            <td>
+                <button onclick="appendValue('-')">&minus;</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="appendValue('0')">0</button>
+            </td>
+            <td>
+                <button onclick="appendValue('.')">.</button>
+            </td>
+            <td>
+                <button onclick="appendValue('+')">&plus;</button>
+            </td>
+            <td>
+                <button class="btnEquals" onclick="calculate()">&equals;</button>
+            </td>
+            </td>
+        </tr>
+
+    </table>
+    
+    <h3><a href="https://github.com/scilla01/Calculator.git">Calculator</a></h3>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
